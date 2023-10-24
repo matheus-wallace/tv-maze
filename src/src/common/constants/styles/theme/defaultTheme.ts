@@ -4,7 +4,7 @@ import { colors } from '../colors';
 export const defaultTheme: DefaultTheme = {
   colors: {
     primary: colors.primary,
-    secondary: colors.secondary,
+    secodary: colors.secondary,
     onSecondary: colors.onSecondary,
     caption: colors.caption,
     surface: colors.surface,

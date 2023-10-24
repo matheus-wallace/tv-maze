@@ -1,16 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { ThemeProvider } from 'styled-components/native';
-import { defaultTheme } from './src/common/constants/styles/theme/defaultTheme';
-import Text from './src/common/components/text';
+import { defaultTheme } from './src/src/common/constants/styles/theme/defaultTheme';
 
 export default function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <View style={styles.container}>
-        <Text size={50} color="brand">
-          Open up App.tsx to start working on your app!
-        </Text>
+        <Text>Open up App.tsx to start working on your app!</Text>
         <StatusBar style="auto" />
       </View>
     </ThemeProvider>
