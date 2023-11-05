@@ -5,6 +5,7 @@ import Content from './src/common/components/Content';
 import Spacer from './src/common/components/Spacer/index';
 import Text from './src/common/components/Text';
 import { defaultTheme } from './src/common/constants/styles/theme/defaultTheme';
+import Icon from './src/common/components/icon';
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
           <Text size={30} color="onSecondary">
             2 Meu componente de text
           </Text>
+          <Icon icon="home" />
         </Content>
       </Container>
     </ThemeProvider>
