@@ -8,6 +8,7 @@ import Icon from './src/common/components/icon';
 import Avatar from './src/common/components/Avatar';
 import BackButton from './src/common/components/BackButton';
 import Notfound from './src/common/components/NotFound';
+import Input from './src/common/components/Input';
 
 export default function App() {
   return (
@@ -19,7 +20,9 @@ export default function App() {
               console.log('clicou');
             }}
           />
-          <Spacer height={30} />
+          <Spacer height={15} />
+          <Input loading />
+
           <Text size={30} color="onSecondary">
             1 Meu componente de text
           </Text>
