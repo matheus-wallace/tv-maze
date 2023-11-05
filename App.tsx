@@ -7,6 +7,7 @@ import { defaultTheme } from './src/common/constants/styles/theme/defaultTheme';
 import Icon from './src/common/components/icon';
 import Avatar from './src/common/components/Avatar';
 import BackButton from './src/common/components/BackButton';
+import Notfound from './src/common/components/NotFound';
 
 export default function App() {
   return (
@@ -23,11 +24,9 @@ export default function App() {
             1 Meu componente de text
           </Text>
           <Spacer height={30} />
-          <Text size={30} color="onSecondary">
-            2 Meu componente de text
-          </Text>
           <Icon icon="home" />
           <Avatar size="small" />
+          <Notfound />
         </Content>
       </Container>
     </ThemeProvider>
