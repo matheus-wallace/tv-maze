@@ -1,32 +1,35 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
 import { ThemeProvider } from 'styled-components/native';
-import { defaultTheme } from './src/common/constants/styles/theme/defaultTheme';
-import Text from './src/common/components/text';
+import Container from './src/common/components/Container/';
+import Content from './src/common/components/Content';
 import Spacer from './src/common/components/Spacer/index';
+import Text from './src/common/components/Text';
+import { defaultTheme } from './src/common/constants/styles/theme/defaultTheme';
+import Icon from './src/common/components/icon';
 
 export default function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <View style={styles.container}>
-        <Text size={30} color="brand">
-          Meu componente 1
+      <Container>
+        <Text size={30} color="onSecondary">
+          1 Meu componente de text
         </Text>
-        <Spacer height={20} />
-        <Text size={30} color="brand">
-          Meu componente 2
+        <Spacer height={30} />
+        <Text size={30} color="onSecondary">
+          2 Meu componente de text
         </Text>
-        <StatusBar style="auto" />
-      </View>
+        <Content>
+          <Spacer height={30} />
+          <Text size={30} color="onSecondary">
+            1 Meu componente de text
+          </Text>
+          <Spacer height={30} />
+          <Text size={30} color="onSecondary">
+            2 Meu componente de text
+          </Text>
+          <Icon icon="home" />
+        </Content>
+      </Container>
     </ThemeProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
