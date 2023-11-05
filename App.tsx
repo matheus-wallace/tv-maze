@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { ThemeProvider } from 'styled-components/native';
 import Container from './src/common/components/Container/';
 import Content from './src/common/components/Content';
@@ -6,6 +5,7 @@ import Spacer from './src/common/components/Spacer/index';
 import Text from './src/common/components/Text';
 import { defaultTheme } from './src/common/constants/styles/theme/defaultTheme';
 import Icon from './src/common/components/icon';
+import Avatar from './src/common/components/Avatar';
 
 export default function App() {
   return (
@@ -28,6 +28,7 @@ export default function App() {
             2 Meu componente de text
           </Text>
           <Icon icon="home" />
+          <Avatar size="small" />
         </Content>
       </Container>
     </ThemeProvider>
