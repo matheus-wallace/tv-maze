@@ -11,6 +11,7 @@ import Notfound from './src/common/components/NotFound';
 import Input from './src/common/components/Input';
 import ShowCover from './src/common/components/ShowCover';
 import { View } from 'react-native';
+import EpisodeCover from './src/common/components/EpisodeCover';
 
 export default function App() {
   return (
@@ -45,6 +46,7 @@ export default function App() {
           <Spacer height={30} />
           <Icon icon="home" />
           <Avatar size="small" />
+          <EpisodeCover url="https://static.tvmaze.com/uploads/images/medium_landscape/15/38639.jpg" />
           <Notfound />
         </Content>
       </Container>
