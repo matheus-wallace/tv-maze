@@ -51,7 +51,7 @@ const ShowCover = ({ onPress, title, url }: ShowCoverProps) => {
           )}
         </CenterIconAndImage>
 
-        {!title && (
+        {title && (
           <>
             <Spacer height={spacing.sm} />
             <Text numberOfLines={1} color="caption">
