@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './styles';
 import { BackButtonProps } from './types';
-import Icon from '../icon';
+import Icon from '../Icon';
 import { useTheme } from 'styled-components/native';
 
 const BackButton = ({ onPress }: BackButtonProps) => {

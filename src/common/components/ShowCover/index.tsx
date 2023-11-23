@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { Button, Pressable, useWindowDimensions, View } from 'react-native';
 import { useTheme } from 'styled-components/native';
-import Icon from '../icon';
+import Icon from '../Icon';
 import {
   Container,
   AbsoluteIcon,

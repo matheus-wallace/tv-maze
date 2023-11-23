@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 import { AvatarProps } from './types';
-import Icon from '../icon';
+import Icon from '../Icon';
 
 export const Container = styled.View`
   align-items: center;

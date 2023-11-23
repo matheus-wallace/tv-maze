@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { useTheme } from 'styled-components/native';
-import Icon from '../icon';
+import Icon from '../Icon';
 import { Container, AbsoluteIconEpisodeCover } from './styles';
 import { EpisodeCoverProps } from './types';
 

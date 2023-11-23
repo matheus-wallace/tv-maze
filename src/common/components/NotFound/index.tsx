@@ -4,7 +4,7 @@ import { NotFoundProps } from './types';
 import { useTheme } from 'styled-components';
 import Spacer from '../Spacer';
 import Text from '../Text';
-import Icon from '../icon';
+import Icon from '../Icon';
 
 const Notfound = ({ icon = 'noResults', color, title }: NotFoundProps) => {
   const { colors, spacing } = useTheme();
